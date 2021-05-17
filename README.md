@@ -12,7 +12,7 @@ lualatex document.tex && biber document && lualatex document.tex && lualatex doc
 ### In TexMaker unter Schnelles Übersetzen User-Buildvorgehen:
 lualatex -interaction=nonstopmode %.tex|biber %|lualatex -interaction=nonstopmode %.tex|lualatex -interaction=nonstopmode %.tex
 
-### Für das Inhaltsverzeichnis:
+### Für das Quellenverzeichnis:
 Bearbeite die Datei .bib in Ordner \content\bib.
 
 Füge die Quellen in BibTeX Form hinzu.
