@@ -1,27 +1,76 @@
 \section{Grundlagen}
-
-\subsection{AGK Software Consulting GmbH}
+Die folgenden Unterabschnitte sind essentielle Bausteine zum Verstehen dieser Arbeit.
+ 
+\subsection{AKG Software Consulting GmbH}
 Das Unternehmen AKG ist ein Software-Entwicklungs-Unternehmen. Im Unternehmen wird Software für die Straßenplanung hergestellt. Die hergestellte Software umfasst ein breites Spektrum, von der Straßenplanung bis zur Kostenberechnung. Die Software besteht aus vielen Modulen, die jeweils einen Fachbereich behandeln und basiert auf
 einer CAD-Plattform. Als Basis kommen drei unterschiedliche Plattformen zum Einsatz. Bei AKG wird die Software kontinuierlich weiterentwickelt und in halbjährlichen
-Software-Versionen für die Kunden veröffentlicht. In den Software-Versionen werden jeweils wichtige Korrekturen für Software-Fehler und neue Funktionalitäten eingeführt. Die Entwicklung der Software wird in den vier Firmensitzen von AKG durchgeführt. Neben dem Hauptfirmensitz in Heitersheim gibt es weitere Firmensitze in Berlin, Wien und Köln. Für den Software-Entwicklungsprozess sind mehrere Abteilungen notwendig, die es in jedem Firmensitz gibt. Dazu gehören die Entwicklungsabteilung, die Qualitätssicherungsabteilung und die Support-Abteilung. Zur Verwaltung der Software-Entwicklung wird ein \ac{TFS} standortübergreifend verwendet. Im \ac{TFS} werden die Software Versionen, der Quellcode, die Aufgaben und weitere Aspekte der Software-Entwicklung verwaltet. Zur Kommunikation verwenden die Mitarbeiter standortübergreifend die Anwendung „Microsoft Teams“ (MS Teams). In den neusten Software-Versionen sind trotz aller Maßnahmen immer einige Software-Fehler vorhanden. Diese Software-Fehler können von den Kunden bemerkt und an die Mitarbeiter von AKG gemeldet werden. Die gemeldeten Software-Fehler werden anschließend von den Mitarbeitern von AKG behoben und in der nächsten Software-Version für die Kunden veröffentlicht. Das Erfassen der Fehler läuft über die Support-Abteilung bei AKG ab. Die Kunden können über ein Ticketsystem Software-Fehler in Form von Tickets an die Support-Abteilung melden. Die Mitarbeiter der Support-Abteilung kümmern sich um die weitere Bearbeitung der Tickets. Entweder wird das Ticket durch die Mitarbeiter der Support-Abteilung gelöst oder an die Entwicklungsabteilung weitergeleitet, damit das Ticket in der Software behoben werden kann.
+Software-Versionen für die Kunden veröffentlicht. In den Software-Versionen werden jeweils wichtige Korrekturen für Software-Fehler und neue Funktionalitäten eingeführt. Die Entwicklung der Software wird in den sieben Firmensitzen von AKG durchgeführt. Neben dem Hauptfirmensitz in Heitersheim gibt es weitere Firmensitze in Berlin, Wien, Köln, Hamburg, Halle und Landquart. Für den Software-Entwicklungsprozess sind mehrere Abteilungen notwendig, die es in jedem Firmensitz gibt. Dazu gehören die Entwicklungsabteilung, die Qualitätssicherungsabteilung und die Support-Abteilung. Zur Verwaltung der Software-Entwicklung wird ein \ac{TFS} standortübergreifend verwendet. Im \ac{TFS} werden die Software Versionen, der Quellcode, die Aufgaben und weitere Aspekte der Software-Entwicklung verwaltet. Zur Kommunikation verwenden die Mitarbeiter standortübergreifend die Anwendung „Microsoft Teams“ (MS Teams). In den neusten Software-Versionen sind trotz aller Maßnahmen immer einige Software-Fehler vorhanden. Diese Software-Fehler können von den Kunden bemerkt und an die Mitarbeiter von AKG gemeldet werden. Die gemeldeten Software-Fehler werden anschließend von den Mitarbeitern von AKG behoben und in der nächsten Software-Version für die Kunden veröffentlicht. Das Erfassen der Fehler läuft über die Support-Abteilung bei AKG ab. Die Kunden können über ein Ticketsystem Software-Fehler in Form von Tickets an die Support-Abteilung melden. Die Mitarbeiter der Support-Abteilung kümmern sich um die weitere Bearbeitung der Tickets. Entweder wird das Ticket durch die Mitarbeiter der Support-Abteilung gelöst oder an die Entwicklungsabteilung weitergeleitet, damit das Ticket in der Software behoben werden kann.
 
 \subsubsection{Abteilungsvorstellung}
 In der Entwicklungsabteilung beschäftigen sich die Mitarbeiter damit, die Software-Fehler zu korrigieren und neue Funktionalitäten umzusetzen. Jeder Mitarbeiter ist dabei für bestimmte Module in der Software zuständig. Pro Modul können mehrere Mitarbeiter und jeder Mitarbeiter kann für mehrere Module zuständig sein. Die Mitarbeiter der Qualitätssicherungsabteilung sind dafür zuständig, die umgesetzten Änderungen der Entwicklungsabteilung in der Software zu überprüfen. Jede Änderung wird durch einen Mitarbeiter aus der Qualitätssicherungsabteilung geprüft, bevor die Änderung an die Kunden veröffentlicht werden kann. Bei fehlerhafter Umsetzung einer Änderung werden die Entwickler zur Korrektur der Änderung aufgefordert.
 
 \subsection{Definitionen}
-\comingSoon{Jeder unverständlicher Begriff bekommt hier einen Unterabschnitt}
+Die folgende Definitionen dienen zur besseren Verständnis bestimmter Begriffe dieser Arbeit.
 
-\subsubsection{Informations- und Kommunikationstechnik}
-\ac{IKT}: Der Begriff entstand zur Beginn der 90er Jahre des vorherigen Jahrhunderts. Bereits in den 1990er war man der Auffassung, dass beide Bereiche zusammenwachsen würden. Die Informationstechnologie umfasste damals die Großrechner. Die Kommunikationstechnologie hingegen beschäftigte sich ausschließlich mit dem Fernsprechnetz. Seit etwa 2000 wird der Begriff häufig als Oberbegriff für alles verwendet, was mit Information und Kommunikation zu tun hat.
+\begin{description}
+	\item[CAPTCHA]\hfill \\
+	\begin{figure}[h]
+		\begin{minipage}{0.5\textwidth}
+			Steht für "`Completely Automated Public Turing test to tell Computers and Humans Apart"' im Deutschen ein vollständig automatisierter öffentlicher
+			Turing-Test, um einen Mensch vom Computer zu erkennen.\footnote{Captcha security: A case study \cite{yan2009captcha}}
+			% \caption{Der Text}
+			% \label{Text}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.4\textwidth}
+			% \textwidth bezieht sich nun auf die Minipage
+			\includegraphics[width=\textwidth]{CAPTCHA.png}
+			\caption{Beispiel-CAPTCHA \cite{yan2009captcha}}
+			%\label{Bild} 
+		\end{minipage}
+		% \caption{noch eine Caption für die Figur}
+	\end{figure}
 
-\subsubsection{Erfolgskriterium}
-Ein Erfolgskriterium ist eine testbare Aussage, die entweder wahr oder falsch ist, wenn man sie auf konkrete Webinhalte anwendet. In dieser Arbeit sind die Erfolgskriterien zur Erfüllung der Barrierefreiheit der \ac{WCAG} gemeint.
+	\item[Informations- und Kommunikationstechnik]\hfill \\
+	\ac{IKT}: Der Begriff entstand zur Beginn der 90er Jahre des vorherigen Jahrhunderts. Bereits in den 1990er war man der Auffassung, dass beide
+	Bereiche zusammenwachsen würden. Die Informationstechnologie umfasste damals die Großrechner. Die Kommunikationstechnologie hingegen beschäftigte
+	sich ausschließlich mit dem Fernsprechnetz. Seit etwa 2000 wird der Begriff häufig als Oberbegriff für alles verwendet, was mit Information und Kommunikation
+	zu tun hat.
+	\\
+	\unsure{Entweder finde die Quelle oder Definition von einer anderen Quelle nehmen}
 
-\subsubsection{\ac{WAI}}
-\comingSoon{Coming soon}
+	\item [Erfolgskriterium]\hfill \\
+	Ein Erfolgskriterium ist eine testbare Aussage, die entweder wahr oder falsch ist, wenn man sie auf konkrete Webinhalte anwendet. In dieser
+	Arbeit sind die Erfolgskriterien zur Erfüllung der Barrierefreiheit der \ac{WCAG} gemeint.\footnote{Web Content Accessibility Guidelines 2.0 \cite{WCAG2.0}}
 
-\subsubsection{\ac{W3C}}
-\comingSoon{Coming soon}
+	\item[\ac{WAI}]\hfill \\	
+	Die \ac{WAI} ist eine Initiative der \ac{W3C}. Die \ac{WAI} entwickelt Standards und Hilfsmitteln, die beim Verstehen und bei der Umsetzung 
+	der Barrierefreiheit helfen.\footnote{The World Wide Web Consortium (W3C) \cite{w3c}}
+
+	\item[\ac{W3C}]\hfill \\
+	Das \ac{W3C} ist ein internationales Community, die die Standards entwickelt, um das langfristige Wachstum des Web 
+	sicherzustellen.\footnote{The World Wide Web Consortium (W3C) \cite{w3c}}
+	
+	\item[Audiodeskription]\hfill \\
+	Audiodeskription ist eine zur Tonspur zusätzlich hinzugefügte Schilderung, um visuelle Details zu beschreiben, die allein durch die Haupt-Tonspur 
+	nicht verständlich sind.\footnote{Web Content Accessibility Guidelines 2.0 \cite{WCAG2.0}}
+	
+	\item[Erweiterte Audiodeskription]\hfill \\
+	Die erweiterte Audiodeskription wird zur audiovisuellen Inhalte hinzugefügt, indem das Video angehalten wird. Diese Zeit wird verwendet, 
+	um eine zusätzliche Audiodeskription hinzuzufügen. Eine erweiterte Audiodeskription wird nur dann benutzt, wenn der Sinn des Videos ohne die verloren geht und wenn 
+	die Pausen zwischen der Schilderung zu kurz sind, dass die normalen Audiodeskription nicht den Sinn des Inhaltes vermitteln 
+	können.\footnote{Web Content Accessibility Guidelines 2.0 \cite{WCAG2.0}}
+	
+	\item[Synchronisierte Medien]\hfill \\
+	"`Audio oder Video, synchronisiert mit einem anderen Format für die Präsentation von Informationen und/oder mit zeitbasierten interaktiven 
+	Komponenten, es sei denn, das Medium ist eine Medienalternative für Text, die als solche deutlich gekennzeichnet 
+	ist."'\footnote{Web Content Accessibility Guidelines 2.0 \cite{WCAG2.0}}
+	
+	\item[Durch Software bestimmbar]\hfill \\
+	Die vom Autor gelieferte Daten sollten so bereitgestellt werden, dass Benutzeragenten und assistierende Techniken diese Daten entnehmen können und in verschiedenen
+	Formen präsentieren können.\footnote{Web Content Accessibility Guidelines 2.0 \cite{WCAG2.0}}
+	
+\end{description}
 
 \subsection{Grundlagen der verwendeten Methoden}
 \comingSoon{Falls noch andere Methoden kommen, dann als Unterabschnitt ausführlich und abstrakt erklären}
@@ -53,8 +102,8 @@ Eine exemplarische Nutzwertanalyse ist in \cref{table:Beispielhafte Nutzwertanal
 
 \subsection{Motivation}
 
-Im Jahr 2019 lebten in Deutschland 7,9 Millionen schwerbehinderte Menschen. "´Körperliche Behinderungen hatten 58\% der schwerbehinderten Menschen: Bei 25\% waren die inneren Organe beziehungsweise Organsysteme betroffen. Bei 11\% waren Arme und/oder Beine in ihrer Funktion eingeschränkt, bei weiteren 10\% Wirbelsäule und Rumpf. In 4\% der Fälle lag Blindheit beziehungsweise eine Sehbehinderung vor. Ebenfalls 4\% litten unter Schwerhörigkeit, Gleichgewichts- oder Sprachstörungen. Der Verlust einer oder beider Brüste war bei 2\% Grund für die Schwerbehinderung."' \footnote{Destatis. Statistisched Bundesamt \cite{DESTATIS}}
+Im Jahr 2019 lebten in Deutschland 7,9 Millionen schwerbehinderte Menschen. "`Körperliche Behinderungen hatten 58\% der schwerbehinderten Menschen: Bei 25\% waren die inneren Organe beziehungsweise Organsysteme betroffen. Bei 11\% waren Arme und/oder Beine in ihrer Funktion eingeschränkt, bei weiteren 10\% Wirbelsäule und Rumpf. In 4\% der Fälle lag Blindheit beziehungsweise eine Sehbehinderung vor. Ebenfalls 4\% litten unter Schwerhörigkeit, Gleichgewichts- oder Sprachstörungen. Der Verlust einer oder beider Brüste war bei 2\% Grund für die Schwerbehinderung."' \footnote{Destatis. Statistisched Bundesamt \cite{DESTATIS}}
 
-Diese Menschen können an der digitalen Welt nicht teilhaben, da sie auf digitale Barrierefreiheit angewiesen sind. Andere haben es schwer, denn die digitalen Barrieren nutzen keinem. Jeder wird sich über Software, mit der man problemlos klarkommen kann, freuen. Demzufolge ist der Abbau der digitalen Barrieren für alle gut. Kurzgefasst ist die Barrierefreiheit für Menschen mit Behinderungen ein Muss, sonst können sie die digitalen Software gar nicht nutzen. Ältere Menschen und Menschen, die beispielsweise nicht gut sehen, lesen oder sich konzentrieren können, profitieren von barrierefreien Software. Fachleute sprechen in diesem Zusammenhang von einer "´Usability"' im Deutschen "´Benutzerfreundlichkeit"' \footnote{Bayerische Staatsregierung \cite{BS}}
-\\
-\unsure{Erweitern}
+Diese Menschen können an der digitalen Welt nicht teilhaben, da sie auf digitale Barrierefreiheit angewiesen sind. Andere haben es schwer, denn die digitalen Barrieren nutzen keinem. Jeder wird sich über Software, mit der man problemlos klarkommen kann, freuen. Demzufolge ist der Abbau der digitalen Barrieren für alle gut. Kurzgefasst ist die Barrierefreiheit für Menschen mit Behinderungen ein Muss, sonst können sie die digitale Software gar nicht nutzen. Ältere Menschen und Menschen, die beispielsweise nicht gut sehen, lesen oder sich konzentrieren können, profitieren von barrierefreier Software. Fachleute sprechen in diesem Zusammenhang von einer "`Usability"' im Deutschen "`Benutzerfreundlichkeit"' \footnote{Bayerische Staatsregierung \cite{BS}}
+
+Nun betrachten wir die Tatsache aus politischer Sicht, dass immer wieder mehr Informationen und Dienste über die neue Medien angeboten werden, dann besteht die Gefahr, dass viele digitale Dienste nicht für alle Bevölkerungsgruppen gleichermaßen zugänglich und nutzbar sind.\footnote{Das eInclusion EU Projekt--Politik zur digitalen Integration und Barrierefreiheit in Europa \cite{redingeinclusion}}
