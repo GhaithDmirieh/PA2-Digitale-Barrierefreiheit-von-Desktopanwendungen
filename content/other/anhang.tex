@@ -1,2 +1,29 @@
 \addsec{Anhang}
+
+\subsection*{Anlage 1}
+\label{subsec: Anlage1}
+
+\textbf{Allgemeine Grenzwerte zu Blitzen und roten Blitzen (general flash and red flash thresholds)}\footnote{Web Content Accessibility Guidelines 2.0 \cite{WCAG2.0}}
+
+\begin{enumerate}
+	\item Ein Blitz oder eine schnell wechselnde Sequenz von Bildern ist unterhalb des Grenzwertes (d.h. Inhalt besteht die Prüfung), wenn eines der Folgenden zutrifft:
+	Es gibt nicht mehr als drei allgemeine Blitze und / oder nicht mehr als drei rote Blitze innerhalb von beliebigen Ein-Sekunden-Zeiträumen; oder
+
+	\item Der zusammengenommene Bereich von gleichzeitig auftretenden Blitzen belegt nicht mehr als eine Summe von .006 Steradianten innerhalb jedes beliebigen 10 Grad 		visuellen Feldes auf dem Bildschirm (25\% jedes beliebigen 10-Grad visuellen Feldes auf dem Bildschirm) bei einer typischen Betrachtungsentfernung. Wobei:
+	\begin{itemize}
+		\item Ein allgemeiner Blitz als ein Paar von entgegengesetzten Änderungen in relativer Luminanz von 10\% oder mehr der maximalen relativen Luminanz definiert wird, 		wobei die relative Luminanz des dunkleren Bildes unter 0.80 liegt; und wo „ein Paar von entgegengesetzten Änderungen“ eine Zunahme gefolgt von einer Abnahme 				ist oder eine Abnahme gefolgt von einer Zunahme. Und
+		\item Ein roter Blitz als jedes Paar von entgegengesetzten Übergängen, bei denen ein gesättigtes Rot beteiligt ist, definiert wird.
+	\end{itemize}
+\end{enumerate}
+
+\textbf{Ausnahme:} Blitzen, das ein feines, ausgeglichenes Muster wie weißes Rauschen oder ein wechselndes Schachbrettmuster mit "`Quadraten"' ist, die auf einer Seite kleiner sind als 0.1 Grad (des visuellen Feldes bei typischem Betrachtungsabstand), verstößt nicht gegen die Grenzwerte.
+
+\textbf{Anmerkung 1:} Die Benutzung eines 341 x 256 Pixel großen Rechtecks irgendwo in dem gezeigten Bildschirmbereich, wenn der Inhalt bei 1024 x 768 Pixeln betrachtet wird, gibt bei allgemeiner Software oder Webinhalten eine gute Einschätzung eines 10 Grad visuellen Feldes für Standard-Bildschirmgrößen und Betrachtungsentfernungen (z.B. 15-17 Zoll Bildschirm bei 56 - 66 cm). (Bildschirme mit höheren Auflösungen, auf denen das gleiche Rendering des Inhalts gezeigt wird, ergeben kleinere und sicherere Bilder, daher werden die geringeren Auflösungen benutzt, um die Grenzwerte zu definieren.)
+
+\textbf{Anmerkung 2:} Ein Übergang ist der Wechsel in relativer Luminanz (oder relativer Luminanz/Farbe für rotes Blitzen) zwischen nebeneinander liegenden Spitzen und Senken in einem Graph von relativer Luminanzmessung (oder relativer Luminanz/Farbe bei rotem Blitzen) in Bezug auf die Zeit. Ein Blitz besteht aus zwei entgegengesetzten Änderungen.
+
+\textbf{Anmerkung 3:} Die derzeitige Arbeitsdefinition in diesem Fachbereich für ein "`Paar von entgegengesetzten Übergängen, die ein gesättigtes Rot beinhalten"' lautet: Wenn für jeden oder beide Zustände, die in jedem Übergang involviert sind, R/(R+ G + B) >= 0.8 und der Wechsel des Wertes von (R-G-B)x320 > 20 (negative Werte von (R-G-B)x320 werden auf Null gesetzt) für beide Übergänge ist. R, G, B Werte reichen von 0-1 wie in der "`relativen Luminanz"'-Definition festgelegt. [HARDING-BINNIE]
+
+\textbf{Anmerkung 4:} Es gibt Werkzeuge, welche die Analyse durch die Erfassung des Video-Bildschirms ausführen. Es ist allerdings kein Werkzeug nötig, um diese Bedingung zu evaluieren, wenn das Blitzen weniger oder gleich 3 Blitze pro Sekunde ist. Der Inhalt besteht automatisch die Prüfung (siehe \# 1 und \# 2 oben).
+
 \appendix

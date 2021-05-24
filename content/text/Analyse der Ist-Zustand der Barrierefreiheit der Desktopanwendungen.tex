@@ -7,7 +7,7 @@ Blinde Menschen können keine Computermaus bedienen, d.h. dass die Software komp
 \subsubsection{Barrierefreiheit und Behindertengerecht}
 \label{subsec:Barrierefreiheit und Behindertengerecht}
 
-Häufig wird das Thema Barrierefreiheit so verstanden, dass es nur bestimmte Zielgruppen betrefft. Der Grund dafür ist, dass das Thema häufig mit Erkrankungen oder Unfällen verbunden wird, die einer offiziellen ärztlichen Diagnose bedürfen. In der Tat haben viel mehr Menschen ein Bedürfnis nach barrierefreier Software, als es ihnen selbst Bewusst ist. In diesem Zusammenhang stellt sich unter anderem die Frage: Warum braucht jeder digitale Barrierefreiheit? Oftmals könnten Situationen dem einen einschränken, diese Situationen fordern barrierefreien Zugang. Was dem einen nach dem letzten Satz sofort einfällt, sind Menschen mit Behinderungen, jedoch ist die Rede hier von jeder Einschränkung, selber wenn sie nicht als Behinderung bezeichnet ist. Die \cref{fig:Beispielhafte Einschränkungen} zeigt diverse Einschränkungen die nicht als Behinderungen zählen.\footnote{Katrin Borecki Usability Engineer, MACH AG \cite{mach}}
+Häufig wird das Thema Barrierefreiheit so verstanden, dass es nur bestimmte Zielgruppen betrefft. Der Grund dafür ist, dass das Thema häufig mit Erkrankungen oder Unfällen verbunden wird, die einer offiziellen ärztlichen Diagnose bedürfen. In der Tat haben viel mehr Menschen ein Bedürfnis nach barrierefreier Software, als es ihnen selbst Bewusst ist. In diesem Zusammenhang stellt sich unter anderem die Frage: Warum jeden digitale Barrierefreiheit braucht. Oftmals könnten Situationen dem einen einschränken, diese Situationen fordern barrierefreien Zugang. Was dem einen nach dem letzten Satz sofort einfällt, sind Menschen mit Behinderungen, jedoch ist die Rede hier von jeder Einschränkung, selber wenn sie nicht als Behinderung bezeichnet ist. Die \cref{fig:Beispielhafte Einschränkungen} zeigt diverse Einschränkungen die nicht als Behinderungen zählen.\footnote{Katrin Borecki Usability Engineer, MACH AG \cite{mach}}
 
 \begin{figure}[H]
 	\centering
@@ -294,7 +294,259 @@ Zu den wichtigen Richtlinien zählt:\footnote{Web Content Accessibility Guidelin
 			\item \textbf{Beschreibung:} Analog zur Richtlinie 2.1.1 nur ohne Ausnahmen.
 		\end{itemize}
 	\end{description}
-			
+	
+	\item[Richtlinie 2.2 Ausreichend Zeit]\hfill
+	\begin{itemize}
+		\item \textbf{Prinzip:} Bedienbar.
+		\item \textbf{Allgemeine Beschreibung:} Der Benutzer erhält genügend Zeit, um Inhalte zu lesen und benutzen.
+	\end{itemize}
+	
+	\begin{description}
+		\item[Richtlinie 2.2.1 Zeiteinteilung anpassbar]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} A
+			\item \textbf{Beschreibung:} Falls es zeitlich begrenzte Inhalte gibt, dann gilt für diesen Inhalt:
+			\begin{itemize}
+				\item Abschalten \& Anpassen und das bevor der Benutzer auf diesen Inhalt trifft.
+				\item Ausweiten der zeitlichen Begrenzung, bevor sie abläuft und zwar so, dass der Benutzer vor mind. 20 Sekunden gewarnt wird. Der Benutzer muss 
+				dementsprechend informiert werden, wie er die zeitlichen Begrenzung ausweitet.
+			\end{itemize}
+			Es gelten für diese Richtlinie folgende Ausnahmen: Wenn es beispielsweise um Echtzeit-Inhalt handelt wie eine Auktion oder wenn die Ausweitung 
+			der zeitlichen Begrenzung den Inhalt ungültig macht. Wenn die zeitliche Begrenzung mehr als 20 Stunden dauert, dann gilt die nicht mehr.
+		\end{itemize}
+		
+		\item[Richtlinie 2.2.2 Pausieren, beenden, ausblenden]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} A
+			\item \textbf{Beschreibung:} Für Inhalte, die sich automatisch bewegen, aktualisieren, scrollen und blinken (Wechseln zwischen mehreren Zuständen um dem 
+			Benutzer aufmerksam zu machen), muss der Benutzer sie steuern können, indem er sie pausieren, beenden und ausblenden können, es sei denn, dass eine der 
+			erwähnten Aktionen ein Teil einer Handlung ist, ohne ihn Informationen verloren gehen können.
+		\end{itemize}
+		
+		\item[Richtlinie 2.2.3 Keine Zeiteinteilung]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} AAA
+			\item \textbf{Beschreibung:} Gar keine Keine zeitlich begrenzte Inhalte, es sei denn, dass es sich um Echtzeit-Ereignisse (Eine Auktion) oder  
+			synchronisierten Medien handelt.
+		\end{itemize}
+		
+		\item[Richtlinie 2.2.4 Unterbrechungen]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} AAA
+			\item \textbf{Beschreibung:} Der Benutzer kann jede Unterbrechungen aufschieben oder unterdrücken, es sei denn, dass es sich um einen Notfall handelt.
+		\end{itemize}
+		
+		\item[Richtlinie 2.2.5 Erneute Authentifizierung]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} AAA
+			\item \textbf{Beschreibung:} Es geht darum, dass der Benutzer ohne Datenverlust nach der erneuten Authentifizierung (Wenn die Sitzung abläuft) 
+			fortfahren kann.
+		\end{itemize}
+	\end{description}
+	
+	\item [Richtlinie 2.3 Anfälle]\hfill
+	\begin{itemize}
+		\item \textbf{Prinzip:} Bedienbar.
+		\item \textbf{Allgemeine Beschreibung:} Die Gestaltung der Inhalte darf nicht zu Anfällen führen.
+	\end{itemize}
+	
+	\begin{description}
+		\item[Richtlinie 2.3.1 Grenzwert von dreimaligem Blitzen oder weniger]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} A
+			\item \textbf{Beschreibung:} Webseiten dürfen keine Elemente/Inhalte haben, die mehr als dreimal in einem beliebigen, eine Sekunde dauernden Zeitraum 
+			blitzen. Es gilt für dieses Richtlinie eine Ausnahme und zwar wenn der Blitz unterhalb der allgemeinen Grenzwerte zu Blitzen und roten Blitzen 
+			(Siehe \nameref{subsec: Anlage1}).
+		\end{itemize}
+		
+		\item[Richtlinie 2.3.2 Drei Blitze]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} AAA
+			\item \textbf{Beschreibung:} Analog zur Richtlinie 2.3.1 nur ohne Ausnahmen.
+		\end{itemize}
+	\end{description}
+	
+	\item[Richtlinie 2.4 Navigierbar]\hfill
+	\begin{itemize}
+		\item \textbf{Prinzip:} Bedienbar.
+		\item \textbf{Allgemeine Beschreibung:} Es werden Mittels dem Benutzer bereitgestellt, um Inhalte zu finden und zu bestimmen, wo sie sind.
+	\end{itemize}
+	
+	\begin{description}
+		\item[Richtlinie 2.4.1 Blöcke umgehen]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} A
+			\item \textbf{Beschreibung:} Gibt es Inhaltsblöcke, die sich auf verschiedenen Webseiten wiederholt werden, dann werden Mittels zur Verfügung 
+			gestellt werden, um diese Inhaltsblöcke umzugehen.		
+		\end{itemize}
+		
+		\item[Richtlinie 2.4.2 Seite mit Titel versehen]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} A
+			\item \textbf{Beschreibung:} Jede Webseite bekommt einen Titel, der beschreibt, worum es sich in der Webseite handelt.
+		\end{itemize}
+		
+		\item[Richtlinie 2.4.3 Fokus-Reihenfolge]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} A
+			\item \textbf{Beschreibung:} Kann die Webseite der Reihe nach navigiert werden und spielt die Reihenfolge der Navigation für die Bedeutung eine 
+			Rolle, dann erhalten fokussierbare Komponenten den Fokus in einer Reihenfolge, in der die Bedeutung und die Bedienbarkeit erhalten bleiben.
+		\end{itemize}
+		
+		\item[Richtlinie 2.4.4 Linkzweck (im Kontext)]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} A
+			\item \textbf{Beschreibung:} Der Linktext muss den Zweck des linkes allein beschreiben oder durch den Linktext mit zusätzlichen 
+			Informationen, die durch Software bestimmt werden können. Eine Ausnahme gilt, wenn die Bedeutung des Links für den Benutzer mehrdeutig wäre.
+		\end{itemize}
+		
+		\item[Richtlinie 2.4.5 Verschiedene Methoden]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} AA
+			\item \textbf{Beschreibung:} Es werden Methoden bereitgestellt werden, um eine Webseite innerhalb einer Sammlung von Webseiten, die einem 
+			gemeinsamen Zweck dienen, zu finden, es sei denn, dass die Webseite das Ergebnis oder ein Schritt eines Prozesses ist.
+		\end{itemize}
+		
+		\item[Richtlinie 2.4.6 Überschriften und Beschriftungen (Labels)]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} AA
+			\item \textbf{Beschreibung:} Überschriften und Labels müssen entweder ein Thema oder einen Zweck beschreiben.
+		\end{itemize}
+		
+		\item[Richtlinie 2.4.7 Fokus sichtbar]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} AA
+			\item \textbf{Beschreibung:} Für jede Benutzerschnittstelle, die durch die Tastatur bedienbar ist, gilt: Sie muss über einen Bedienmodus
+			verfügen, der dem Tastaturfokus sichtbar macht.
+		\end{itemize}
+		
+		\item[Richtlinie 2.4.8 Position]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} AAA
+			\item \textbf{Beschreibung:} Es werden Informationen über die Position des Benutzers (Wo sich der Benutzer befindet, falls es um eine 
+			Sammlung von Webseiten geht) zur Verfügung gestellt werden.
+		\end{itemize}
+		
+		\item[Richtlinie 2.4.9 Linkzweck (reiner Link)]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} AAA
+			\item \textbf{Beschreibung:} Der Linktext beschreibt allein den Zweck des Linkes, es sei denn, die Bedeutung des Links für den Benutzer 
+			mehrdeutig wäre.
+		\end{itemize}
+		
+		\item[Richtlinie 2.4.10 Abschnittsüberschriften]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} AAA
+			\item \textbf{Beschreibung:} Die Überschriften der Abschnitte werden verwenden, um den Inhalt zu strukturieren.
+		\end{itemize}
+	\end{description}	
+	
+	\item[Richtlinie 3.1 Lesbar]\hfill
+	\begin{itemize}
+		\item \textbf{Prinzip:} Verständlich.
+		\item \textbf{Allgemeine Beschreibung:} Alle Inhalte müssen lesbar und verständlich sein.
+	\end{itemize}
+	
+	\begin{description}
+		\item[Richtlinie 3.1.1 Sprache der Seite]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} A
+			\item \textbf{Beschreibung:} Die voreingestellte menschliche Sprache (Jede Sprache, die gesprochen, geschrieben oder gebärdet werden kann) jeder Webseite muss 
+			durch Software bestimmt werden können.
+		\end{itemize}
+		
+		\item[Richtlinie 3.1.2 Sprache von Teilen]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} AA
+			\item \textbf{Beschreibung:} "`Die menschliche Sprache jedes Abschnitts oder jedes Satzes im Inhalt kann durch Software bestimmt werden außer
+			bei Eigennamen, technischen Fachbegriffen, Wörtern einer unklaren Sprache und Wörtern oder Wendungen, die Teil des Jargons des direkt 
+			umliegenden Textes geworden sind"'.\footnote{Web Content Accessibility Guidelines 2.0 \cite{WCAG2.0}}
+		\end{itemize}
+		
+		\item[Richtlinie 3.1.3 Ungewöhnliche Wörter]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} AAA
+			\item \textbf{Beschreibung:} Spezielle Definitionen von Wörtern und Wendungen müssen erkannt werden können. Diese können Wörter, die auf ungewöhnlicher 
+			Weise benutzt werden.
+		\end{itemize}
+		
+		\item[Richtlinie 3.1.4 Abkürzungen]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} AAA
+			\item \textbf{Beschreibung:} Die Bedeutung oder die ausgeschriebene Form von Abkürzungen wird durch ein Mechanismus erkannt.
+		\end{itemize}
+		
+		\item[Richtlinie 3.1.5 Leseniveau]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} AAA
+			\item \textbf{Beschreibung:} Verlangt der Text bestimmte Lesefähigkeiten, die über das Niveau der niedrigen sekundären Schulbildung hinausgehen (Die 
+			Phase nach der Beendung der ersten sechs Schuljahre), dann wird andere Version des Textes in einer einfacheren Sprache zur Verfügung gestellt werden.
+		\end{itemize}
+		
+		\item[Richtlinie 3.1.6 Aussprache]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} AAA
+			\item \textbf{Beschreibung:} 
+		\end{itemize}
+	\end{description}
+
+	\item[Richtlinie 3.2 Vorhersehbar]\hfill
+	\begin{itemize}
+		\item \textbf{Prinzip:} Verständlich.
+		\item \textbf{Allgemeine Beschreibung:} 
+	\end{itemize}
+	
+	\begin{description}
+		\item[Richtlinie ]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:}
+			\item \textbf{Beschreibung:}
+		\end{itemize}
+	\end{description}
+
+	\item[Richtlinie 3.3 Hilfestellung bei der Eingabe]\hfill
+	\begin{itemize}
+		\item \textbf{Prinzip:} Verständlich.
+		\item \textbf{Allgemeine Beschreibung:} 
+	\end{itemize}
+	
+	\begin{description}
+		\item[Richtlinie ]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:}
+			\item \textbf{Beschreibung:}
+		\end{itemize}
+	\end{description}
+
+	\item[Richtlinie 4.1 Kompatibel]\hfill
+	\begin{itemize}
+		\item \textbf{Prinzip:} Robust.
+		\item \textbf{Allgemeine Beschreibung:} Ziel ist das Maximieren der Kompatibilität von den aktuellen und zukünftigen Benutzeragenten, 
+		einschließlich assistierender Techniken. Es muss sichergestellt werden, dass Autoren nichts tun, was assistierende Techniken brechen kann bzw. 
+		was von den assistierenden Techniken nicht erkannt werden kann.
+	\end{itemize}
+	
+	\begin{description}
+		\item[Richtlinie 4.1.1 Syntaxanalyse]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} A
+			\item \textbf{Beschreibung:} Es gilt für Inhalte, die durch Auszeichnungssprachen implementiert wurden:
+			\begin{itemize}
+				\item Elemente dieser Inhalte haben Start- und Endtags.
+				\item Wenn die Elemente entsprechend ihrer Spezifikationen verschachtelt werden, erhalten sie keine doppelte Attribute und alle ihrer
+				 IDs sind einzigartig. Ausgenommen wenn die Spezifikationen diese erlaubt.
+				 
+			\end{itemize}
+		\end{itemize}
+		
+		\item[Richtlinie 4.1.2 Name, Rolle, Wert]\hfill
+		\begin{itemize}
+			\item \textbf{Konformitätsstufe:} A
+			\item \textbf{Beschreibung:} Alle Bestandteile einer Benutzerschnittstelle müssen durch Software bestimmt werden können. Diese können 
+			Namen, Rollen, Zustände, Eigenschaften und Werte, die vom Benutzer festgelegt werden können. Außerdem müssen Benachrichtigung über Änderungen 
+			an diesen Elementen dem Benutzer zur Verfügung gestellt werden.
+		\end{itemize}
+	\end{description}
 
 \end{description}
 
